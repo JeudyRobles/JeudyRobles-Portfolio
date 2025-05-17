@@ -1,0 +1,83 @@
+/* From Uiverse.io by zymantas-katinas */ 
+.Button {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Shadow layer */
+.Button__Shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+/* Edge layer */
+.Button__Edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: linear-gradient(
+    to left,
+    hsl(217, 33%, 16%) 0%,
+    hsl(217, 33%, 16%) 100%
+  );
+}
+
+/* Front layer */
+.Button__Front {
+  width: 176px;
+  height: 44px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  font-size: 1.25rem;
+  background: var(--primary-color-500);
+  border: solid 2px var(--secondary-color);
+  border-radius: 8px;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+/* Hover and active states */
+.Button:hover .Button__Shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.Button:hover .Button__front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.Button:active .Button__Shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.Button:active .Button__Front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+/* Disable text selection */
+.Button .Button__Front span {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--secondary-color);
+  user-select: none;
+}

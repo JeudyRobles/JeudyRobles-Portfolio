@@ -1,0 +1,63 @@
+
+.Hero {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+}
+    
+.Hero__Item {
+  padding: 1.875rem;
+  background-color: var(--NeutralAlpha);
+  color: var(--primary-color);
+  text-align: left;
+  border-radius: 1.25rem;
+}
+
+.Hero__Item--1 {
+  grid-column: span 3 / span 3;
+  grid-row: span 3 / span 3;
+  padding: 1rem;
+}
+
+.Hero__item--1---text{
+  max-width: 50ch;
+  color: var(--text-color);
+}
+
+.Hero__Item--2 {
+  grid-column: span 2 / span 2;
+  grid-column-start: 4;
+}
+
+.Hero__Item--3 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+.Hero__Item--4 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 4;
+}
+
+.Hero__Item--5 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+.Hero__Item--6 {
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.Hero__Item--7 {
+  grid-row-start: 5;
+}
+        

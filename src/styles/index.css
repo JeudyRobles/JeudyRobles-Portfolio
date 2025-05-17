@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables*/
+:root {
+  --primary-color: #4B9482;
+  --primary-color-950: #1D3933;
+  --primary-color-500: #69D0B7;
+  --secondary-color: #18181B;
+  --text-color: #F9FFFD;
+  --NeutralAlpha: #07090d70;
+}
+
+/*↪︎ Typography*/
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: clamp(16px, 10vw, 241px);
+  text-align: center;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 75ch
+}
+
+p {
+  font-size: 18px;
+}
+
+span {
+  color: var(--primary-color-950);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilos generales */
+
+body {
+  background-color: var(--secondary-color);
+  background-image: url("/public/Background.png");
+  color: var(--text-color);
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
