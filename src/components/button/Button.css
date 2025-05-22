@@ -8,19 +8,6 @@
   cursor: pointer;
 }
 
-/* Shadow layer */
-.Button__Shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  transform: translateY(2px);
-  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
-}
-
 /* Edge layer */
 .Button__Edge {
   position: absolute;
@@ -39,7 +26,7 @@
 /* Front layer */
 .Button__Front {
   width: 176px;
-  height: 44px;
+  height: 40px;
   position: relative;
   display: flex;
   align-items: center;
@@ -51,12 +38,6 @@
   border-radius: 8px;
   transform: translateY(-4px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
-}
-
-/* Hover and active states */
-.Button:hover .Button__Shadow {
-  transform: translateY(4px);
-  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
 
 .Button:hover .Button__front {
