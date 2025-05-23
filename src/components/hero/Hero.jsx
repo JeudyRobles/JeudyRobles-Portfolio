@@ -3,7 +3,7 @@ import ButtonPrimary from '../buttonPrimary/ButtonPrimary.jsx';
 import ButtonSecondary from '../buttonSecondary/ButtonSecondary.jsx';
 import GitHubIcon from '../icons/Github.jsx';
 import FigmaIcon from '../icons/Figma.jsx';
-import LinkedInIcon from '../icons/LinkedIn.jsx';
+import InstagramIcon from '../icons/Instagram.jsx';
 import WorldIcon from '../icons/World.jsx';
 
 
@@ -18,17 +18,22 @@ export default function Hero() {
             <h2>Web Developer</h2>
             <p className="Hero__item--1---text">I have experience in creating customized websites, managing social media, and cybersecurity. I am currently seeking opportunities to contribute my skills to a dynamic and growing team.</p>
             <div className="Hero__Item--1__Buttons">
-              <ButtonSecondary className="Hero__Item--1__Button" text="Download CV"/>
-              <ButtonSecondary className="Hero__Item--1__Button" text="LinkedIn"/>
+              <a href="/JeudyRoblesCv.pdf" target='_blank' rel="noopener noreferrer">
+                <ButtonSecondary className="Hero__Item--1__Button" text="View Resume"/>
+              </a> 
+              <a href="http://www.linkedin.com/in/jeudyrobles" target="_blank" rel="noopener noreferrer">
+                <ButtonSecondary className="Hero__Item--1__Button" text="LinkedIn"/>
+              </a> 
             </div>
           </article>
           
           <article className="Hero__Item Hero__Item--2">
             <h3><span>Another </span>Platforms</h3>
             <div className="Hero__Item--2__Icons">
-              <a href=""><GitHubIcon/></a>
-              <a href=""><FigmaIcon/></a>
-              <a href=""><LinkedInIcon/></a> 
+              <a href="https://github.com/JeudyRobles" target='_blank' rel="noopener noreferrer"><GitHubIcon/></a>
+              <a href="https://www.instagram.com/jeudyrp/?next=%2F" target='_blank' rel="noopener noreferrer"><InstagramIcon/></a> 
+              <a href="https://www.figma.com/@jeudyrobles1" target='_blank' rel="noopener noreferrer"><FigmaIcon/></a>
+              
             </div>
           </article>
 
@@ -81,7 +86,7 @@ export default function Hero() {
           </article>
 
           <article className="Hero__Item Hero__Item--7">
-            <a href="">@</a>
+            <a href="mailto:jeudyjr@outlook.com" rel="noopener noreferrer">@</a>
           </article>
       </section>
     </>

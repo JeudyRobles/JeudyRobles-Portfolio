@@ -1,8 +1,8 @@
 import './Projects.css'
-import Petmap from "../../assets/images/ImageProject(Petmap).png"
-import Ticolibri from "../../assets/images/ImageProject(Ticolibri).png"
-import Gambastore from "../../assets/images/ImageProject(Gambastore).png"
-import Docafetarrazu from "../../assets/images/ImageProject(Docafetarrazu).png"
+import Petmap from "../../assets/images/ImageProject(Petmap).webp"
+import Ticolibri from "../../assets/images/ImageProject(Ticolibri).webp"
+import Gambastore from "../../assets/images/ImageProject(Gambastore).webp"
+import Docafetarrazu from "../../assets/images/ImageProject(Docafetarrazu).webp"
 
 import ButtonSecondary from '../buttonSecondary/ButtonSecondary.jsx';
 import GitHubIcon from '../icons/Github.jsx';
@@ -66,11 +66,11 @@ export default function Projects() {
                 <p className="Projects__Block__Text">{item.description}</p>
               </section>
               <section className="Projects__Block__Buttons">
-                <a href={item.demoLink} target='_blank'>
+                <a href={item.demoLink} target='_blank' rel="noopener noreferrer">
                   <ButtonSecondary text="Preview"/>
                 </a>
                 {item.githubLink !== "" && item.githubLink !== null && (
-                  <a href={item.githubLink} target="_blank">
+                  <a href={item.githubLink} target="_blank" rel="noopener noreferrer">
                     <GitHubIcon />
                   </a>
                 )}

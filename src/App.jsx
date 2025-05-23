@@ -1,8 +1,8 @@
-import './styles/App.css'
 import './styles/index.css'
 
 import Hero from './components/hero/Hero.jsx';
 import Projects from './components/projects/Projects.jsx';
+import Footer from './components/footer/Footer.jsx';
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
     <div className="container">
       <Hero/>
       <Projects/>
+      <Footer/>
     </div>
     </>
   )

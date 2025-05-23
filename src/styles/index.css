@@ -15,6 +15,7 @@
   --secondary-color: #18181B;
   --text-color: #F9FFFD;
   --NeutralAlpha: #07090d70;
+  --NeutralAlpha400A: #07090d41;
   --AquaMarine300: #99FBE4;
   --AquaMarine500: #69D0B7;
 }
@@ -74,6 +75,10 @@ span {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+li {
+  all: unset;
 }
 
 /* Estilos generales */
