@@ -1,0 +1,52 @@
+.Projects {
+  margin-top: 3.375rem;
+}
+
+.Projects__Title {
+  margin-bottom: 2rem;
+  font-size: 48px;
+  color: var(--text-color);
+}
+
+.Projects__Title--primary {
+  color: var(--AquaMarine300);
+}
+
+.Projects__Title--secondary {
+  color: var(--AquaMarine500);
+}
+
+.Projects__List {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Projects__Block {
+  margin-right: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.313rem;
+  flex-basis: 329px;
+}
+
+.Projects__Block__Info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.Projects__Block__Text {
+  height: 68px;
+}
+
+.Projects__Block__Buttons {
+  margin-bottom: 4.313rem;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 802px) {
+  .Projects__Block {
+    flex-basis: 100%;
+  }
+}

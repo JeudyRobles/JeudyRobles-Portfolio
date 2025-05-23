@@ -39,34 +39,39 @@ export default function Hero() {
             </div>
             <div className="Hero__Item--3__Div Hero__Item--3__Div--TechStack">
               <p>Javascript</p>
-              <p>React</p>
+              <p>React/Vue</p>
               <p>Bootstrap</p>
-              <p>Tailwind</p>
+              <p>NodeJS</p>
               <p>Wordpress</p>
-              <p>Python</p>
+              <p>MySQL</p>
             </div>
           </article>
 
           <article className="Hero__Item Hero__Item--4">
-            <h5>Professional Experience</h5>
-            <div className="">
-              <h6>Social Media Management</h6>
-              <p> -I managed the social networks of L'Patate and SICSA, creating content and strategies to increase interaction with the public.</p>
+            <h5 className="Hero__Item--4__Title">Professional Experience</h5>
+            
+            <div className="Hero__Item--4__Block">
+              <h6 className="Hero__Item--4__BlockTitle">Web Development & Freelance</h6>
+              <p className="Hero__Item--4__BlockText">
+                -Creation of customized websites with attractive design and focus on user experience.
+              </p>
             </div>
-            <div className="">
-              <h6>Social Media Management</h6>
-              <p> -I managed the social networks of L'Patate and SICSA, creating content and strategies to increase interaction with the public.</p>
+            <br />
+            <div className="Hero__Item--4__Block">
+              <h6 className="Hero__Item--4__BlockTitle">Social Media Management</h6>
+              <p className="Hero__Item--4__BlockText">
+                -I managed the social networks of L'Patate and SICSA, creating content and strategies to increase interaction with the public.
+              </p>
             </div>
-            <div className="">
-              <h6>Web Development & Freelance</h6>
-              <p> -Creation of customized websites with attractive design and focus on user experience.</p>
+            <br />
+            <div className="Hero__Item--4__Block">
+              <h6 className="Hero__Item--4__BlockTitle">Customer Service & Communication</h6>
+              <p className="Hero__Item--4__BlockText">
+                -Experience in face-to-face and digital customer service, ensuring a positive experience for users.
+              </p>
             </div>
-            <div className="">
-              <h6>Customer Service & Communication</h6>
-              <p>   -Experience in face-to-face and digital customer service, ensuring a positive experience for users.</p>
-            </div>
-          </article>
-
+        </article>
+    
           <article className="Hero__Item Hero__Item--5"></article>
 
           <article className="Hero__Item Hero__Item--6">

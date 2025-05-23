@@ -3,7 +3,11 @@
   height: 39px;
   width: 175px;
   margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  gap: 1rem;
   background-color: transparent;
   cursor: pointer;
   border: 1px solid var(--primary-color-500);
@@ -33,7 +37,6 @@
   width: 10px;
   z-index: -1;
 }
-
 
 .type1:hover::after {
   visibility: visible;

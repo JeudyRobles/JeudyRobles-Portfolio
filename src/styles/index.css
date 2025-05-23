@@ -14,7 +14,9 @@
   --primary-color-500: #69D0B7;
   --secondary-color: #18181B;
   --text-color: #F9FFFD;
-  --NeutralAlpha: #07090d70 ;
+  --NeutralAlpha: #07090d70;
+  --AquaMarine300: #99FBE4;
+  --AquaMarine500: #69D0B7;
 }
 
 /*↪︎ Typography*/
@@ -79,6 +81,7 @@ a {
 body {
   background-color: var(--secondary-color);
   background-image: url("/public/Background.png");
+  
   color: var(--text-color);
   padding: 2rem;
 }
