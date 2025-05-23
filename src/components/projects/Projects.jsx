@@ -58,7 +58,7 @@ export default function Projects() {
         <section className="Projects__List">
           {PortfolioItems.map((item) => (
             <article className="Projects__Block" key={item.id}>
-              <img className="Projects__Block__Image" src={item.image} alt={item.title} />
+              <img className="Projects__Block__Image" src={item.image} alt={item.title} loading="lazy" />
               <section className="Projects__Block__Info">
                 <h5 className="Projects__Block__Title">
                   {item.title} <span>{item.span}</span>
@@ -70,7 +70,7 @@ export default function Projects() {
                   <ButtonSecondary text="Preview"/>
                 </a>
                 {item.githubLink !== "" && item.githubLink !== null && (
-                  <a href={item.githubLink} target="_blank" rel="noopener noreferrer">
+                  <a href={item.githubLink} target="_blank" rel="noopener noreferrer" aria-label="GitHub of the project">
                     <GitHubIcon />
                   </a>
                 )}

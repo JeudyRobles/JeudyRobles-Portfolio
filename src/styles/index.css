@@ -85,7 +85,7 @@ li {
 
 body {
   background-color: var(--secondary-color);
-  background-image: url("/public/Background.png");
+  background-image: url("/public/Background.webp");
   
   color: var(--text-color);
   padding: 2rem;

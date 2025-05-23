@@ -72,7 +72,9 @@
   font-size: 48px;
 }
 
-.Hero__Item--3__Div h6 {
+.Hero__Item--3__Div span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   color: #B3B5B8;
 }
 

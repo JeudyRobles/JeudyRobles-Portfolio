@@ -30,16 +30,21 @@ export default function Hero() {
           <article className="Hero__Item Hero__Item--2">
             <h3><span>Another </span>Platforms</h3>
             <div className="Hero__Item--2__Icons">
-              <a href="https://github.com/JeudyRobles" target='_blank' rel="noopener noreferrer"><GitHubIcon/></a>
-              <a href="https://www.instagram.com/jeudyrp/?next=%2F" target='_blank' rel="noopener noreferrer"><InstagramIcon/></a> 
-              <a href="https://www.figma.com/@jeudyrobles1" target='_blank' rel="noopener noreferrer"><FigmaIcon/></a>
-              
+              <a href="https://github.com/JeudyRobles" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile of Jeudy Robles">
+                <GitHubIcon />
+              </a>
+              <a href="https://www.instagram.com/jeudyrp/?next=%2F" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile of Jeudy Robles">
+                <InstagramIcon />
+              </a>
+              <a href="https://www.figma.com/@jeudyrobles1" target="_blank" rel="noopener noreferrer" aria-label="Figma profile of Jeudy Robles">
+                <FigmaIcon />
+              </a>
             </div>
           </article>
 
           <article className="Hero__Item Hero__Item--3">
             <div className="Hero__Item--3__Div">
-              <h6>I am perpetually looking to evolve.</h6>
+              <span>I am perpetually looking to evolve.</span>
               <h3>My Tech Stack</h3>
             </div>
             <div className="Hero__Item--3__Div Hero__Item--3__Div--TechStack">
