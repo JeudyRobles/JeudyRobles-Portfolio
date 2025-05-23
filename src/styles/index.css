@@ -14,7 +14,7 @@
   --primary-color-500: #69D0B7;
   --secondary-color: #18181B;
   --text-color: #F9FFFD;
-  --NeutralAlpha: #07090d70;
+  --NeutralAlpha: #07090d70 ;
 }
 
 /*↪︎ Typography*/
@@ -32,7 +32,7 @@ h1 {
 }
 
 h2 {
-  font-size: 64px;
+  font-size: clamp(16px, 10vw, 64px);
 }
 
 h3 {
@@ -57,7 +57,7 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  max-width: 75ch
+  max-width: 75ch;
 }
 
 p {
@@ -89,7 +89,7 @@ body {
   padding: 20px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   body {
     padding: 0;
   }

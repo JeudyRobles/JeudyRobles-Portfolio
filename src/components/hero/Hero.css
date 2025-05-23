@@ -20,13 +20,19 @@
   padding: 1rem;
 }
 
-.Hero__item--1---text{
+.Hero__item--1---text {
   max-width: 50ch;
   color: var(--text-color);
 }
 
-.Hero__Item--1__Buttons{
-  margin: 0.5rem 0;
+.Hero__Item--1__Buttons { 
+  display: flex ;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.Hero__Item--1__Button {
+  margin: 9rem;
 }
 
 .Hero__Item--2 {

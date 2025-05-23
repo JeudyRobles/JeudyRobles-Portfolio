@@ -1,5 +1,6 @@
 import './Hero.css'
-import Button from '../button/Button.jsx';
+import ButtonPrimary from '../buttonPrimary/ButtonPrimary.jsx';
+import ButtonSecondary from '../buttonSecondary/ButtonSecondary.jsx';
 import GitHubIcon from '../icons/Github.jsx';
 import FigmaIcon from '../icons/Figma.jsx';
 import LinkedInIcon from '../icons/LinkedIn.jsx';
@@ -13,10 +14,12 @@ export default function Hero() {
       <section className="Section Hero">
 
           <article className="Hero__Item Hero__Item--1">
-            <Button text="Open to work"/>
+            <ButtonPrimary text="Open to work"/>
             <h2>Web Developer</h2>
             <p className="Hero__item--1---text">I have experience in creating customized websites, managing social media, and cybersecurity. I am currently seeking opportunities to contribute my skills to a dynamic and growing team.</p>
             <div className="Hero__Item--1__Buttons">
+              <ButtonSecondary className="Hero__Item--1__Button" text="Download CV"/>
+              <ButtonSecondary className="Hero__Item--1__Button" text="LinkedIn"/>
             </div>
           </article>
           
