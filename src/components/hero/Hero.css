@@ -142,54 +142,10 @@
   transform: rotate(360deg);
 }
 
-/* @media (max-width: 1024px) {
-  .Hero {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    gap: 8px
-  }
-
-.Hero__Item--1 {
-  grid-column: span 5 / span 5;
-
-}
-
-.Hero__Item--2 {
-  grid-column: span 5 / span 5;
-    grid-row-start: 2;
-}
-
-.Hero__Item--3 {
-  grid-column: span 5 / span 5;
-    grid-row-start: 3;
-}
-
-.Hero__Item--4 {
-  grid-column: span 5 / span 5;
-    grid-row-start: 4;
-}
-.Hero__Item--5 {
-  grid-column: span 5 / span 5;
-    grid-row-start: 5;
-}
-
-.Hero__Item--6 {
-  grid-column: span 5 / span 5;
-    grid-row-start: 6;
-}
-
-.Hero__Item--7 {
-  grid-column: span 5 / span 5;
-    grid-row-start: 7;
-}
-}
- */
-
 @media (max-width: 1024px) {
   .Hero {
-    grid-template-columns: 1fr; /* Ajusta el diseño a una sola columna */
-    grid-auto-rows: auto; /* Filas con altura dinámica */
+    grid-template-columns: 1fr; 
+    grid-auto-rows: auto; 
     gap: 16px;
     padding: 0;
     grid-template-areas: 
@@ -204,7 +160,7 @@
   }
 
   .Hero__Item {
-    grid-column: 1 / -1; /* Ocupa toda la fila sin necesidad de `span` */
+    grid-column: 1 / -1; 
     width: 100%;
   }
 
@@ -221,7 +177,7 @@
   }
 
   .Hero__Item--4 {
-    grid-row: 4; /* Asigna una fila única */
+    grid-row: 4; 
   }
 
   .Hero__Item--5 {

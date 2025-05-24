@@ -1,9 +1,4 @@
-import './Footer.css'
-
-import Heart from "../icons/Heart.jsx"
-import GitHubIcon from "../icons/Github.jsx"
-import LinkedInIcon from "../icons/LinkedIn.jsx"
-import FigmaIcon from "../icons/Figma.jsx"
+import"./Footer.css";import Heart from"../icons/Heart.jsx";import GitHubIcon from"../icons/Github.jsx";import LinkedInIcon from"../icons/LinkedIn.jsx";import FigmaIcon from"../icons/Figma.jsx";
 
 export default function Footer() {
   return (

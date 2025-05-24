@@ -1,10 +1,4 @@
-import './Hero.css'
-import ButtonPrimary from '../buttonPrimary/ButtonPrimary.jsx';
-import ButtonSecondary from '../buttonSecondary/ButtonSecondary.jsx';
-import GitHubIcon from '../icons/Github.jsx';
-import FigmaIcon from '../icons/Figma.jsx';
-import InstagramIcon from '../icons/Instagram.jsx';
-import WorldIcon from '../icons/World.jsx';
+import"./Hero.css";import ButtonPrimary from"../buttonPrimary/ButtonPrimary.jsx";import ButtonSecondary from"../buttonSecondary/ButtonSecondary.jsx";import GitHubIcon from"../icons/Github.jsx";import FigmaIcon from"../icons/Figma.jsx";import InstagramIcon from"../icons/Instagram.jsx";import WorldIcon from"../icons/World.jsx";
 
 
 export default function Hero() {

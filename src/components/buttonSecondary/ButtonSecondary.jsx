@@ -1,5 +1,4 @@
-import './ButtonSecondary.css'
-import ShareIcon from '../icons/Share.jsx';
+import"./ButtonSecondary.css";import ShareIcon from"../icons/Share.jsx";
 export default function ButtonPrimary({text, variant}) {
     return (
       <>
