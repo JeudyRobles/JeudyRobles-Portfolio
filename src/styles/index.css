@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 /* Reset básico */
 * {
   margin: 0;
@@ -9,14 +7,12 @@
 
 /* Variables*/
 :root {
-  --primary-color: #4B9482;
+  --primary-color: #99FBE4;
   --primary-color-950: #1D3933;
   --primary-color-500: #69D0B7;
   --secondary-color: #18181B;
   --text-color: #F9FFFD;
   --NeutralAlpha: #07090d70;
-  --NeutralAlpha400A: #07090d41;
-  --AquaMarine300: #99FBE4;
   --AquaMarine500: #69D0B7;
 }
 
@@ -30,28 +26,27 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1 {
-  font-size: clamp(16px, 10vw, 241px);
-  text-align: center;
+  font-size: clamp(32px, 6vw, 68px);
 }
 
 h2 {
-  font-size: clamp(16px, 10vw, 64px);
+  font-size: clamp(28px, 5vw, 64px);
 }
 
 h3 {
-  font-size: 30px;
+  font-size: clamp(24px, 4vw, 30px);
 }
 
 h4 {
-  font-size: 24px;
+  font-size: clamp(20px, 3vw, 24px);
 }
 
 h5 {
-  font-size: 20px;
+  font-size: clamp(18px, 2.5vw, 20px);
 }
 
 h6 {
-  font-size: 18px;
+  font-size: clamp(16px, 2vw, 18px);
   color: #B3B5B8;
 }
 
@@ -60,21 +55,22 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  max-width: 75ch;
+  max-width: clamp(2ch, 75vw, 75ch);
+  font-size: clamp(14px, 2vw, 18px);
+  color: var(--text-color);
 }
 
-p {
-  font-size: 18px;
-  content: var(--text-color);
-}
 
 span {
-  color: var(--primary-color-950);
+  color: var(--AquaMarine500);
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 
 li {
@@ -85,16 +81,15 @@ li {
 
 body {
   background-color: var(--secondary-color);
-  background-image: url("/public/Background.webp");
-  
+  background-image: url("/assets/images/Background.webp");
   color: var(--text-color);
-  padding: 2rem;
+  
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 @media (max-width: 768px) {

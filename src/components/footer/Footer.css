@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: var(--NeutralAlpha400A);
+  background-color: var(--NeutralAlpha);
   padding: 2.25rem;
   border-radius: 1.25rem;
 }
@@ -38,9 +38,13 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 440px) {
   .Footer {
     padding: 1rem;
+  }
+  .Footer__Info {
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .Footer__InfoText {
     font-size: clamp(16px, 10vw, 24px);
