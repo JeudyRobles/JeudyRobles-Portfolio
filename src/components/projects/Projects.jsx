@@ -63,7 +63,7 @@ export default function Projects() {
               </a>
               {item.githubLink && (
                 <a href={item.githubLink} target="_blank" rel="noopener noreferrer" aria-label="GitHub of the project">
-                  <img src="./assets/icons/github_dark.svg" alt="" width="24" height="24"/>
+                  <img className="Github__Icon" src="./assets/icons/github_dark.svg" alt="" width="24" height="24"/>
                 </a>
               )}
             </section>

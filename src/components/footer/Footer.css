@@ -32,9 +32,16 @@
 @media (max-width: 880px) {
   .Footer {
     justify-content: center;
+    gap: 1rem;
   }
   .Footer__Copy {
     text-align: center;
+  }
+  .Footer__Copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
@@ -49,4 +56,5 @@
   .Footer__InfoText {
     font-size: clamp(16px, 10vw, 24px);
   }
+
 }
