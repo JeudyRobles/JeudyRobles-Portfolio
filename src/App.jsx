@@ -15,6 +15,7 @@ AOS.init({
   once: true, // La animación solo ocurre una vez
 });
 
+
 function App() {
 /*   const lenis = useLenis((lenis) => {
     // called every scroll

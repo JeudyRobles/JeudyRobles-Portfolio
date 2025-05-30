@@ -33,12 +33,12 @@ const ButtonSpan = styled.span`
   font-size: clamp(14px, 2vw, 16px);
 `;
 
-export default function ButtonPrimary({text, variant}) {
+export default function ButtonSecondary({text, variant}) {
     return (
       <>
         <Button>
           <ButtonSpan>{text}</ButtonSpan>
-          <img src="./assets/icons/link_dark.svg" aria-hidden="true"  width="24" height="24"/>
+          
         </Button>
       </>
   );

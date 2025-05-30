@@ -11,6 +11,7 @@
 .Projects__List {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .Projects__Block {
@@ -40,6 +41,7 @@
 @media (max-width: 802px) {
   .Projects__Block {
     flex-basis: 100%;
+    margin: 0;
   }
   .Projects__Block__Info {
     align-items: center;

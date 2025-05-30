@@ -7,18 +7,23 @@
 
 /* Variables*/
 :root {
-  --primary-color: #99FBE4;
-  --primary-color-950: #1D3933;
-  --primary-color-500: #69D0B7;
-  --secondary-color: #18181B;
-  --text-color: #F9FFFD;
+  --primary-color: #99fbe4;
+  --primary-color-950: #1d3933;
+  --primary-color-500: #69d0b7;
+  --secondary-color: #18181b;
+  --text-color: #f9fffd;
   --NeutralAlpha: #07090d70;
-  --AquaMarine500: #69D0B7;
+  --AquaMarine500: #69d0b7;
 }
 
 /*↪︎ Typography*/
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Anton SC", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -47,7 +52,7 @@ h5 {
 
 h6 {
   font-size: clamp(16px, 2vw, 18px);
-  color: #B3B5B8;
+  color: #b3b5b8;
 }
 
 p {
@@ -59,7 +64,6 @@ p {
   font-size: clamp(14px, 2vw, 18px);
   color: var(--text-color);
 }
-
 
 span {
   color: var(--AquaMarine500);
@@ -83,13 +87,57 @@ body {
   background-color: var(--secondary-color);
   background-image: url("/assets/images/Background.webp");
   color: var(--text-color);
-  
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 10px;
+}
+
+/* Iconos */
+
+.Icon svg path,
+circle {
+  transition: all 0.25s ease-out;
+}
+
+.Icon svg:hover path {
+  transform: translateY(-2px);
+}
+
+.Icon-Github svg:hover path {
+  fill: #e7bb0b;
+}
+
+.Icon-Instagram svg:hover path {
+  stroke: #e72c0b;
+}
+
+.Icon-Instagram svg:hover circle {
+  fill: #e72c0b;
+  transform: translateY(-2px);
+}
+
+.Icon-Linkedin svg:hover path {
+  fill: #9acd32;
+}
+
+.Icon-Email svg:hover path {
+  stroke: #0be7c2;
+}
+
+.Icon-Heart svg:hover path {
+  stroke:#e72c0b;
+}
+
+/* Tippy */
+
+.tippy-box {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media (max-width: 768px) {
