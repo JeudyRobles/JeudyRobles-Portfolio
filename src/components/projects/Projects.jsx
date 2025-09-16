@@ -1,7 +1,7 @@
 import "./Projects.css";
 import ButtonSecondary from "../buttonSecondary/ButtonSecondary.jsx";
-import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css';
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
 
 const PortfolioItems = [
   {
@@ -14,6 +14,16 @@ const PortfolioItems = [
     demoLink: "https://equipo-c23-84-t-webapp.onrender.com/",
     githubLink:
       "https://github.com/No-Country-simulation/equipo-c23-84-T-webapp/tree/main",
+  },
+    {
+    id: 4,
+    image: "/assets/images/Docafetarrazu.webp",
+    title: "Docafetarrazu - ",
+    span: "WordPress dev",
+    description:
+      "Developed using Wordpress, with my project team at INA (2023).",
+    demoLink: "https://Docafetarrazu.com/",
+    githubLink: "",
   },
   {
     id: 2,
@@ -32,17 +42,7 @@ const PortfolioItems = [
     description: "Developed with Wordpress, Designed and developed by me.",
     demoLink: "",
     githubLink: "",
-  },
-  {
-    id: 4,
-    image: "/assets/images/Docafetarrazu.webp",
-    title: "Docafetarrazu - ",
-    span: "WordPress dev",
-    description:
-      "Developed using Wordpress, with my project team at INA (2023).",
-    demoLink: "https://Docafetarrazu.com/",
-    githubLink: "",
-  },
+  }
 ];
 
 export default function Projects() {
@@ -81,9 +81,15 @@ export default function Projects() {
               <p className="Projects__Block__Text">{item.description}</p>
             </section>
             <section className="Projects__Block__Buttons">
-              <a href={item.demoLink} target="_blank" rel="noopener noreferrer">
-                <ButtonSecondary text="View Website" />
-              </a>
+              {item.demoLink && (
+                <a
+                  href={item.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ButtonSecondary text="View Website" />
+                </a>
+              )}
               {item.githubLink && (
                 <Tippy content="Github Repository!" animation="fade">
                   <a
