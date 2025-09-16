@@ -21,7 +21,7 @@ const PortfolioItems = [
     title: "Ticolibri - ",
     span: "WordPress dev",
     description: "Developed with Wordpress, Designed and developed by me.",
-    demoLink: "https://ticolibri.com/",
+    demoLink: "",
     githubLink: "",
   },
   {
@@ -30,7 +30,7 @@ const PortfolioItems = [
     title: "Gamba Store - ",
     span: "WordPress dev",
     description: "Developed with Wordpress, Designed and developed by me.",
-    demoLink: "https://gambastore.ticolibri.com/",
+    demoLink: "",
     githubLink: "",
   },
   {
