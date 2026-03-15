@@ -35,7 +35,7 @@ Clone the repository:
 
 ## 🌍 Deployment on Vercel
 
-The site is deployed in **Vercel**, and you can see it at [https://jeudy-robles-portfolio.vercel.app/](https://jeudy-robles-portfolio.vercel.app/).
+The site is deployed in **Vercel**, and you can see it at [https://jeudy-robles-portfolio.vercel.app/](https://jeudyrobles.vercel.app/).
 
 ## 🤝 Contributions
 
