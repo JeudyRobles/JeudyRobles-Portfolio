@@ -20,17 +20,19 @@ Welcome to my personal portfolio, where I showcase my projects, skills and exper
 
 ## 🚀 Installation and Usage.
 
+This project uses [pnpm](https://pnpm.io/). With Node.js 16.13+, enable Corepack once: `corepack enable`.
+
 Clone the repository:
  ````bash
  git clone https://github.com/JeudyRobles/JeudyRobles-Portfolio.git
  ````
 2. Install the dependencies:
  ````bash
- npm install
+ pnpm install
  ````
 3. Run the developing project:
  ````bash
- npm run dev
+ pnpm dev
  ````
 
 ## 🌍 Deployment on Vercel

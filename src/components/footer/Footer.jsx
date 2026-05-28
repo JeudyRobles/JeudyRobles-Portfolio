@@ -1,6 +1,5 @@
 import "./Footer.css";
 import Tippy from "@tippyjs/react";
-import "tippy.js/dist/tippy.css";
 export default function Footer() {
   return (
     <footer
@@ -27,8 +26,8 @@ export default function Footer() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="36px"
-                  height="36px"
+                  width="2.25rem"
+                  height="2.25rem"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -50,8 +49,8 @@ export default function Footer() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="36px"
-                  height="36px"
+                  width="2.25rem"
+                  height="2.25rem"
                   viewBox="0 0 24 24"
                 >
                   <circle
@@ -117,8 +116,8 @@ export default function Footer() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="36px"
-                  height="36px"
+                  width="2.25rem"
+                  height="2.25rem"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -146,8 +145,8 @@ export default function Footer() {
             <svg
               id="Icon-Heart"
               xmlns="http://www.w3.org/2000/svg"
-              width="32px"
-              height="32px"
+              width="2rem"
+              height="2rem"
               viewBox="0 0 24 24"
             >
               <path

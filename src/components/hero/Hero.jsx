@@ -2,7 +2,6 @@ import "./Hero.css";
 import ButtonPrimary from "../buttonPrimary/ButtonPrimary.jsx";
 import WorldIcon from "../icons/World.jsx";
 import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css';
 
 export default function Hero() {
   return (
@@ -29,8 +28,8 @@ export default function Hero() {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="42px"
-                height="42px"
+                width="2.625rem"
+                height="2.625rem"
                 viewBox="0 0 24 24"
               >
                 <g
@@ -108,8 +107,8 @@ export default function Hero() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="36px"
-                  height="36px"
+                  width="2.25rem"
+                  height="2.25rem"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -129,8 +128,8 @@ export default function Hero() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="36px"
-                  height="36px"
+                  width="2.25rem"
+                  height="2.25rem"
                   viewBox="0 0 24 24"
                 >
                   <circle
@@ -194,8 +193,8 @@ export default function Hero() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="36px"
-                  height="36px"
+                  width="2.25rem"
+                  height="2.25rem"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -277,8 +276,8 @@ export default function Hero() {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="64px"
-                height="64px"
+                width="4rem"
+                height="4rem"
                 viewBox="0 0 24 24"
               >
                 <path

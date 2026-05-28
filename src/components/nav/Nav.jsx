@@ -3,8 +3,8 @@ import styled from '@emotion/styled'
 const NavContainer = styled.nav`
   display:flex;
   justify-content: center;
-  gap: 17px;
-  padding:1rem;
+  gap: var(--space-nav-gap);
+  padding: var(--space-4);
 `;
 
 

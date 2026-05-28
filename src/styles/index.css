@@ -12,8 +12,39 @@
   --primary-color-500: #69d0b7;
   --secondary-color: #18181b;
   --text-color: #f9fffd;
+  --text-muted: #b3b5b8;
   --NeutralAlpha: #07090d70;
   --AquaMarine500: #69d0b7;
+  --color-accent-resume: #cd32ab;
+  --color-icon-github: #e7bb0b;
+  --color-icon-instagram: #e72c0b;
+  --color-icon-linkedin: #9acd32;
+  --color-icon-email: #0be7c2;
+
+  --space-1: 0.313rem;
+  --space-2: 0.5rem;
+  --space-3: 0.938rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-9: 2.25rem;
+  --space-icon: 0.3rem;
+  --space-nav-gap: 1.0625rem;
+  --space-container-x: 0.625rem;
+  --space-section-y: 3.375rem;
+  --space-projects-actions: 4.313rem;
+  --space-footer-info: 1.375rem;
+
+  --radius-md: 0.5rem;
+  --radius-lg: 1.25rem;
+
+  --layout-max-width: 90rem;
+  --font-size-sm: 1rem;
+  --projects-description-height: 4.25rem;
+  --projects-card-basis: 20.5625rem;
+  --hero-photo-width-sm: 15.625rem;
+  --icon-size-lg: 3rem;
 }
 
 /*↪︎ Typography*/
@@ -31,28 +62,28 @@ h6 {
 }
 
 h1 {
-  font-size: clamp(32px, 6vw, 68px);
+  font-size: clamp(2rem, 6vw, 4.25rem);
 }
 
 h2 {
-  font-size: clamp(28px, 5vw, 64px);
+  font-size: clamp(1.75rem, 5vw, 4rem);
 }
 
 h3 {
-  font-size: clamp(24px, 4vw, 30px);
+  font-size: clamp(1.5rem, 4vw, 1.875rem);
 }
 
 h4 {
-  font-size: clamp(20px, 3vw, 24px);
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
 }
 
 h5 {
-  font-size: clamp(18px, 2.5vw, 20px);
+  font-size: clamp(1.125rem, 2.5vw, 1.25rem);
 }
 
 h6 {
-  font-size: clamp(16px, 2vw, 18px);
-  color: #b3b5b8;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: var(--text-muted);
 }
 
 p {
@@ -61,7 +92,7 @@ p {
   font-weight: 400;
   font-style: normal;
   max-width: clamp(2ch, 75vw, 75ch);
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(0.875rem, 2vw, 1.125rem);
   color: var(--text-color);
 }
 
@@ -90,9 +121,9 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: var(--layout-max-width);
   margin: 0 auto;
-  padding: 10px;
+  padding: var(--space-container-x);
 }
 
 /* Iconos */
@@ -103,32 +134,32 @@ circle {
 }
 
 .Icon svg:hover path {
-  transform: translateY(-2px);
+  transform: translateY(-0.125rem);
 }
 
 .Icon-Github svg:hover path {
-  fill: #e7bb0b;
+  fill: var(--color-icon-github);
 }
 
 .Icon-Instagram svg:hover path {
-  stroke: #e72c0b;
+  stroke: var(--color-icon-instagram);
 }
 
 .Icon-Instagram svg:hover circle {
-  fill: #e72c0b;
-  transform: translateY(-2px);
+  fill: var(--color-icon-instagram);
+  transform: translateY(-0.125rem);
 }
 
 .Icon-Linkedin svg:hover path {
-  fill: #9acd32;
+  fill: var(--color-icon-linkedin);
 }
 
 .Icon-Email svg:hover path {
-  stroke: #0be7c2;
+  stroke: var(--color-icon-email);
 }
 
 .Icon-Heart svg:hover path {
-  stroke:#e72c0b;
+  stroke: var(--color-icon-instagram);
 }
 
 /* Tippy */
@@ -140,8 +171,24 @@ circle {
   font-style: normal;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   body {
     padding: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html.reduce-motion [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }

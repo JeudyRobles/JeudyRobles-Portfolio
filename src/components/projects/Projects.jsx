@@ -1,7 +1,6 @@
 import "./Projects.css";
 import ButtonSecondary from "../buttonSecondary/ButtonSecondary.jsx";
 import Tippy from "@tippyjs/react";
-import "tippy.js/dist/tippy.css";
 
 const PortfolioItems = [
   {
@@ -82,13 +81,7 @@ export default function Projects() {
             </section>
             <section className="Projects__Block__Buttons">
               {item.demoLink && (
-                <a
-                  href={item.demoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <ButtonSecondary text="View Website" />
-                </a>
+                <ButtonSecondary text="View Website" href={item.demoLink} />
               )}
               {item.githubLink && (
                 <Tippy content="Github Repository!" animation="fade">
@@ -101,8 +94,8 @@ export default function Projects() {
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="36px"
-                      height="36px"
+                      width="2.25rem"
+                      height="2.25rem"
                       viewBox="0 0 24 24"
                     >
                       <path
