@@ -12,9 +12,12 @@ export default function Hero() {
           <h1 data-aos="zoom-in">Jeudy Robles</h1>
           <h2 data-aos="zoom-in">Web Developer</h2>
           <p data-aos="zoom-in" className="Hero__item--1---text">
-            I have experience in creating customized websites, managing social
-            media, and cybersecurity. I am currently seeking opportunities to
-            contribute my skills to a dynamic and growing team.
+            I don't just build websites; I engineer high-performance digital
+            assets that act as sales engines for your business. By combining
+            bespoke Figma design, cutting-edge Headless architecture, and
+            professional GSAP animations, I deliver premium user experiences
+            that convert visitors into loyal customers, ensuring your brand
+            stands out and outperforms the competition.
           </p>
           <div className="Hero__Item--1__Resume">
             <a
@@ -213,45 +216,45 @@ export default function Hero() {
             <h3>My Tech Stack</h3>
           </div>
           <div className="Hero__Item--3__Div Hero__Item--3__Div--TechStack">
-            <p>Javascript</p>
-            <p>React/Vue</p>
-            <p>Bootstrap</p>
-            <p>NodeJS</p>
-            <p>Wordpress</p>
-            <p>MySQL</p>
+            <p>Figma</p>
+            <p>React</p>
+            <p>Tailwind CSS</p>
+            <p>GSAP</p>
+            <p>Headless WordPress</p>
+            <p>GitHub</p>
           </div>
         </article>
 
         <article data-aos="flip-up" className="Hero__Item Hero__Item--4">
-          <h5 className="Hero__Item--4__Title">Professional Experience</h5>
+          <h5 className="Hero__Item--4__Title">What I Bring to the Table</h5>
 
           <div className="Hero__Item--4__Block">
-            <h6 className="Hero__Item--4__BlockTitle">
-              Web Development & Freelance
-            </h6>
+            <h6 className="Hero__Item--4__BlockTitle">Custom Design</h6>
             <p className="Hero__Item--4__BlockText">
-              -Creation of customized websites with attractive design and focus
-              on user experience.
+              Your brand deserves a unique identity. No templates, no shortcuts.
             </p>
           </div>
           <br />
           <div className="Hero__Item--4__Block">
-            <h6 className="Hero__Item--4__BlockTitle">
-              Social Media Management
-            </h6>
+            <h6 className="Hero__Item--4__BlockTitle">Fast & Smooth</h6>
             <p className="Hero__Item--4__BlockText">
-              -I managed the social networks of L'Patate and SICSA, creating
-              content and strategies to increase interaction with the public.
+              Lightning-fast websites that load instantly and feel premium on
+              every device.
             </p>
           </div>
           <br />
           <div className="Hero__Item--4__Block">
-            <h6 className="Hero__Item--4__BlockTitle">
-              Customer Service & Communication
-            </h6>
+            <h6 className="Hero__Item--4__BlockTitle">Built to Convert</h6>
             <p className="Hero__Item--4__BlockText">
-              -Experience in face-to-face and digital customer service, ensuring
-              a positive experience for users.
+              Strategic design that turns visitors into paying customers.
+            </p>
+          </div>
+          <br />
+          <div className="Hero__Item--4__Block">
+            <h6 className="Hero__Item--4__BlockTitle">Your Digital Partner</h6>
+            <p className="Hero__Item--4__BlockText">
+              Long-term growth, ongoing support, and a website that evolves with
+              your business.
             </p>
           </div>
         </article>

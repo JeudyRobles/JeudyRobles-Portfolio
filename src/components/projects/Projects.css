@@ -1,5 +1,6 @@
 .Projects {
   margin-top: var(--space-section-y);
+  margin-bottom: var(--space-section-y);
 }
 
 .Projects__Title {
@@ -9,17 +10,21 @@
 }
 
 .Projects__List {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
 }
 
 .Projects__Block {
-  margin-right: var(--space-5);
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
-  flex-basis: var(--projects-card-basis);
+  background-color: var(--NeutralAlpha);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  min-width: 0;
+  min-height: 427px;
+  justify-content: space-between;
 }
 
 .Projects__Block__Info {
@@ -33,15 +38,19 @@
 }
 
 .Projects__Block__Buttons {
-  margin-bottom: var(--space-projects-actions);
   display: flex;
   align-items: center;
 }
 
-@media (max-width: 50.125rem) {
-  .Projects__Block {
-    flex-basis: 100%;
-    margin: 0;
+@media (max-width: 1600px) {
+  .Projects__List {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1025px) {
+  .Projects__List {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .Projects__Block__Info {
     align-items: center;
@@ -61,14 +70,17 @@
   }
 }
 
-@media (max-width: 23.125rem) {
+@media (max-width: 720px) {
+  .Projects {
+    padding: var(--space-4);
+  }
+  .Projects__List {
+    grid-template-columns: 1fr;
+  }
   .Projects__Block {
-    margin: 0;
+    padding: 0;
   }
   .Projects__Block__Image {
     width: 100%;
-  }
-  .Projects__Block__Buttons {
-    margin-bottom: var(--space-8);
   }
 }

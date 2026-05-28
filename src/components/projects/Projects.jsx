@@ -4,7 +4,34 @@ import Tippy from "@tippyjs/react";
 
 const PortfolioItems = [
   {
-    id: 1,
+    id: 5,
+    image: "/assets/images/partnercr.webp",
+    title: "PartnerCR - ",
+    span: "Frontend",
+    description: "Developed with Headless Wordpress, GSAP. Designed by Clicker.studio.",
+    demoLink: "https://www.partnercr.com/",
+    githubLink: "",
+  },
+  {
+    id: 4,
+    image: "/assets/images/cortesarchitects.webp",
+    title: "Cortes Architects - ",
+    span: "WordPress dev",
+    description: "Developed with Wordpress, Designed with a Nolo template and developed by me.",
+    demoLink: "https://cortesarchitects.com/",
+    githubLink: "",
+  },
+  {
+    id: 3,
+    image: "/assets/images/ollerabogadosblog.webp",
+    title: "Oller Abogados Blog - ",
+    span: "Frontend",
+    description: "Developed with HTML, CSS, JavaScript, and WordPress. Designed by Clicker.studio.",
+    demoLink: "https://ollerabogados.com/ollerblog/",
+    githubLink: "",
+  },
+  {
+    id: 2,
     image: "/assets/images/Petmap.webp",
     title: "Petmap - ",
     span: "Frontend",
@@ -14,50 +41,14 @@ const PortfolioItems = [
     githubLink:
       "https://github.com/No-Country-simulation/equipo-c23-84-T-webapp/tree/main",
   },
-    {
-    id: 4,
+  {
+    id: 1,
     image: "/assets/images/Docafetarrazu.webp",
     title: "Docafetarrazu - ",
     span: "WordPress dev",
     description:
       "Developed using Wordpress, with my project team at INA (2023).",
     demoLink: "https://Docafetarrazu.com/",
-    githubLink: "",
-  },
-  {
-    id: 2,
-    image: "/assets/images/Ticolibri.webp",
-    title: "Ticolibri - ",
-    span: "WordPress dev",
-    description: "Developed with Wordpress, Designed and developed by me.",
-    demoLink: "",
-    githubLink: "",
-  },
-  {
-    id: 3,
-    image: "/assets/images/GambaStore.webp",
-    title: "Gamba Store - ",
-    span: "WordPress dev",
-    description: "Developed with Wordpress, Designed and developed by me.",
-    demoLink: "",
-    githubLink: "",
-  },
-  {
-    id: 5,
-    image: "/assets/images/ollerabogadosblog.webp",
-    title: "Oller Abogados Blog - ",
-    span: "Frontend",
-    description: "Developed with HTML, CSS, JavaScript, and WordPress.",
-    demoLink: "https://ollerabogados.com/ollerblog/",
-    githubLink: "",
-  },
-  {
-    id: 6,
-    image: "/assets/images/cortesarchitects.webp",
-    title: "Cortes Architects - ",
-    span: "WordPress dev",
-    description: "Developed with Wordpress, Designed with a Nolo template and developed by me.",
-    demoLink: "https://cortesarchitects.com/",
     githubLink: "",
   }
 ];
@@ -77,7 +68,7 @@ export default function Projects() {
       </h2>
 
       <section className="Projects__List">
-        {PortfolioItems.map((item) => (
+        {[...PortfolioItems].sort((a, b) => b.id - a.id).map((item) => (
           <article
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
