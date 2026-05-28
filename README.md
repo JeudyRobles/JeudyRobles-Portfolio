@@ -7,7 +7,7 @@ Welcome to my personal portfolio, where I showcase my projects, skills and exper
 - **Developed with React and Vite** for a quick experience ⚡
 - **Design optimized with Emotion** for efficient styling 🎨
 - **Animations with AOS and Lenis** for smooth navigation 🎭
-- SEO with meta tags and optimization 📈
+- **SEO** with meta tags and optimization 📈
 - **Responsive Design** for a better experience on mobile devices 📱
 
 ## 🔧 Technologies Used.
@@ -37,7 +37,7 @@ Clone the repository:
 
 ## 🌍 Deployment on Vercel
 
-The site is deployed in **Vercel**, and you can see it at [https://jeudy-robles-portfolio.vercel.app/](https://jeudyrobles.vercel.app/).
+The site is deployed in **Vercel**, and you can see it at [https://jeudyrobles.vercel.app/](https://jeudyrobles.vercel.app/).
 
 ## 🤝 Contributions
 
@@ -45,7 +45,7 @@ If you want to improve this project, feel free to **fork** and send a **pull req
 
 ## 📞 Contact.
 
-If you have questions or suggestions, you can email me at **jeudyjr@outlook.com** 📩
+If you have questions or suggestions, you can email me at **jeudyjrp@gmail.com** 📩
 
 ---
 

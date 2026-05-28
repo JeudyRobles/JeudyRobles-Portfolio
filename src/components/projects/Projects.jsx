@@ -41,6 +41,24 @@ const PortfolioItems = [
     description: "Developed with Wordpress, Designed and developed by me.",
     demoLink: "",
     githubLink: "",
+  },
+  {
+    id: 5,
+    image: "/assets/images/ollerabogadosblog.webp",
+    title: "Oller Abogados Blog - ",
+    span: "Frontend",
+    description: "Developed with HTML, CSS, JavaScript, and WordPress.",
+    demoLink: "https://ollerabogados.com/ollerblog/",
+    githubLink: "",
+  },
+  {
+    id: 6,
+    image: "/assets/images/cortesarchitects.webp",
+    title: "Cortes Architects - ",
+    span: "WordPress dev",
+    description: "Developed with Wordpress, Designed with a Nolo template and developed by me.",
+    demoLink: "https://cortesarchitects.com/",
+    githubLink: "",
   }
 ];
 
