@@ -10,16 +10,26 @@ const PuppeteerRenderer = vitePrerender.PuppeteerRenderer
 
 class PlatformRenderer extends PuppeteerRenderer {
   async initialize() {
+    const puppeteer = require('puppeteer')
+    const options = { ...this._rendererOptions, headless: true }
+
     if (process.platform === 'linux') {
       const chromium = require('@sparticuz/chromium')
       const executablePath = await chromium.executablePath()
-      this._rendererOptions = {
-        ...this._rendererOptions,
-        executablePath,
-        args: [...(this._rendererOptions.args || []), ...chromium.args],
-      }
+      options.executablePath = executablePath
+      options.args = [...chromium.args]
+    } else {
+      options.args = ['--no-sandbox']
     }
-    return super.initialize()
+
+    try {
+      this._puppeteer = await puppeteer.launch(options)
+    } catch (error) {
+      console.error('[vite-plugin-prerender] Chrome launch failed:', error.message)
+      throw error
+    }
+
+    return this._puppeteer
   }
 }
 
