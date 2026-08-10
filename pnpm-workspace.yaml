@@ -1,2 +1,6 @@
 allowBuilds:
   esbuild: true
+  puppeteer: true
+
+overrides:
+  puppeteer: ^23.0.0

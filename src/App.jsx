@@ -34,6 +34,13 @@ function usePrefersReducedMotion() {
   return prefersReducedMotion;
 }
 
+function isPrerender() {
+  return (
+    typeof window !== "undefined" &&
+    /HeadlessChrome|prerender/i.test(navigator.userAgent)
+  );
+}
+
 function LenisAosBridge() {
   useLenis(() => {
     AOS.refresh();
@@ -43,7 +50,7 @@ function LenisAosBridge() {
 }
 
 function App() {
-  const prefersReducedMotion = usePrefersReducedMotion();
+  const prefersReducedMotion = usePrefersReducedMotion() || isPrerender();
 
   useEffect(() => {
     AOS.init({

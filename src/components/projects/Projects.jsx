@@ -8,6 +8,7 @@ const PortfolioItems = [
     image: "/assets/images/partnercr.webp",
     title: "PartnerCR - ",
     span: "Frontend",
+    alt: "PartnerCR website homepage - frontend project by Jeudy Robles",
     description: "Developed with Headless Wordpress, GSAP. Designed by Clicker.studio.",
     demoLink: "https://www.partnercr.com/",
     githubLink: "",
@@ -17,6 +18,7 @@ const PortfolioItems = [
     image: "/assets/images/cortesarchitects.webp",
     title: "Cortes Architects - ",
     span: "WordPress dev",
+    alt: "Cortes Architects website homepage - WordPress project by Jeudy Robles",
     description: "Developed with Wordpress, Designed with a Nolo template and developed by me.",
     demoLink: "https://cortesarchitects.com/",
     githubLink: "",
@@ -26,6 +28,7 @@ const PortfolioItems = [
     image: "/assets/images/ollerabogadosblog.webp",
     title: "Oller Abogados Blog - ",
     span: "Frontend",
+    alt: "Oller Abogados Blog homepage - frontend project by Jeudy Robles",
     description: "Developed with HTML, CSS, JavaScript, and WordPress. Designed by Clicker.studio.",
     demoLink: "https://ollerabogados.com/ollerblog/",
     githubLink: "",
@@ -35,6 +38,7 @@ const PortfolioItems = [
     image: "/assets/images/Petmap.webp",
     title: "Petmap - ",
     span: "Frontend",
+    alt: "Petmap app screenshot - React project by Jeudy Robles",
     description:
       "Developed with React, Java, Spring Boot, PostgreSQL, and Render.",
     demoLink: "https://equipo-c23-84-t-webapp.onrender.com/",
@@ -46,6 +50,7 @@ const PortfolioItems = [
     image: "/assets/images/Docafetarrazu.webp",
     title: "Docafetarrazu - ",
     span: "WordPress dev",
+    alt: "Docafetarrazu website homepage - WordPress project by Jeudy Robles",
     description:
       "Developed using Wordpress, with my project team at INA (2023).",
     demoLink: "https://Docafetarrazu.com/",
@@ -79,7 +84,7 @@ export default function Projects() {
             <img
               className="Projects__Block__Image"
               src={item.image}
-              alt={item.title}
+              alt={item.alt}
               loading="lazy"
             />
             <section className="Projects__Block__Info">

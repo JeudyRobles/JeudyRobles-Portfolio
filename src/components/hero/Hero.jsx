@@ -272,7 +272,7 @@ export default function Hero() {
           <article data-aos="fade-up" className="Hero__Item Hero__Item--7">
             <a
               className="Icon Icon-Email"
-              href="mailto:jeudyjr@outlook.com"
+              href="mailto:jeudyjrp@gmail.com"
               rel="noopener noreferrer"
               role="link"
               aria-label="Send an email to Jeudy Robles"

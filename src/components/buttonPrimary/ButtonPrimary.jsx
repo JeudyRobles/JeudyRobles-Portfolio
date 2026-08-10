@@ -62,7 +62,7 @@ export default function ButtonPrimary({ text }) {
   return (
     <ButtonLink
       data-aos="zoom-in"
-      href="mailto:jeudyjr@outlook.com"
+      href="mailto:jeudyjrp@gmail.com"
       rel="noopener noreferrer"
     >
       <Edge />

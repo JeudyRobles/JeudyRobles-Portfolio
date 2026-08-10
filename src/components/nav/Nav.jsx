@@ -11,8 +11,8 @@ const NavContainer = styled.nav`
 export default function Nav() {
   return (
     <NavContainer data-aos="fade-down" className='Nav'>
-      <img src="/v0_dark.svg" alt="Vercel Logo" />
-      <a href="#" className='Nav__Title'>Jeudy Robles / <span className='Nav__SubTitle'>Portfolio</span> </a>
+      <img src="/v0_dark.svg" alt="Jeudy Robles Logo" />
+      <a href="#Hero" className='Nav__Title'>Jeudy Robles / <span className='Nav__SubTitle'>Portfolio</span> </a>
     </NavContainer>
   )
 }
