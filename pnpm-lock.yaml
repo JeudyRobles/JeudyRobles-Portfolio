@@ -39,6 +39,9 @@ importers:
       '@eslint/js':
         specifier: ^9.22.0
         version: 9.39.4
+      '@sparticuz/chromium':
+        specifier: ^131.0.1
+        version: 131.0.1
       '@types/react':
         specifier: ^19.0.10
         version: 19.2.15
@@ -596,6 +599,10 @@ packages:
     resolution: {integrity: sha512-QVTUovf40zgTqlFVrKA1uXMVvU2QWEFWfAH8Wdc48IxLvrJMQVMBRjuQyUpzZCDkakImib9eVazbWlC6ksWtJw==}
     cpu: [x64]
     os: [win32]
+
+  '@sparticuz/chromium@131.0.1':
+    resolution: {integrity: sha512-VfmHkQmb/Px0zjwdSQwjRMwFw63Qfj+g4Giumz4jiAGEpXHgIZk6xEwlUz6yiUHVDveK2TEgMR2MR6I3okOE7w==}
+    engines: {node: '>= 16'}
 
   '@tippyjs/react@4.2.6':
     resolution: {integrity: sha512-91RicDR+H7oDSyPycI13q3b7o4O60wa2oRbjlz2fyRLmHImc4vyDwuUP8NtZaN0VARJY5hybvDYrFzhY9+Lbyw==}
@@ -2639,6 +2646,16 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.60.4':
     optional: true
+
+  '@sparticuz/chromium@131.0.1':
+    dependencies:
+      follow-redirects: 1.16.0(debug@4.4.3)
+      tar-fs: 3.1.3
+    transitivePeerDependencies:
+      - bare-abort-controller
+      - bare-buffer
+      - debug
+      - react-native-b4a
 
   '@tippyjs/react@4.2.6(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
