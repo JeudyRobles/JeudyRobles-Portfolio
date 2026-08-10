@@ -14,10 +14,12 @@ class PlatformRenderer extends PuppeteerRenderer {
     const options = { ...this._rendererOptions, headless: true }
 
     if (process.platform === 'linux') {
+      process.env.AWS_EXECUTION_ENV = 'AWS_Lambda_nodejs22.x'
       const chromium = require('@sparticuz/chromium')
       const executablePath = await chromium.executablePath()
       options.executablePath = executablePath
       options.args = [...chromium.args]
+      options.headless = chromium.headless
     } else {
       options.args = ['--no-sandbox']
     }
