@@ -10,14 +10,12 @@ export default function Hero() {
         <article className="Hero__Item Hero__Item--1">
           <ButtonPrimary text="Open to work" />
           <h1 data-aos="zoom-in">Jeudy Robles</h1>
-          <h2 data-aos="zoom-in">Web Developer</h2>
+          <h2 data-aos="zoom-in">Frontend Developer & UI Specialist</h2>
           <p data-aos="zoom-in" className="Hero__item--1---text">
-            I don't just build websites; I engineer high-performance digital
-            assets that act as sales engines for your business. By combining
-            bespoke Figma design, cutting-edge Headless architecture, and
-            professional GSAP animations, I deliver premium user experiences
-            that convert visitors into loyal customers, ensuring your brand
-            stands out and outperforms the competition.
+            I build fast, modern websites designed to turn visitors into
+            customers. I combine advanced frontend development in React, custom
+            design in Figma, and smooth GSAP animations to create digital
+            experiences that stand out and truly perform.
           </p>
           <div className="Hero__Item--1__Resume">
             <a
@@ -231,30 +229,32 @@ export default function Hero() {
           <div className="Hero__Item--4__Block">
             <h6 className="Hero__Item--4__BlockTitle">Custom Design</h6>
             <p className="Hero__Item--4__BlockText">
-              Your brand deserves a unique identity. No templates, no shortcuts.
+              Tailor-made design: zero generic templates. Unique interfaces 100%
+              adapted to your brand identity.
             </p>
           </div>
           <br />
           <div className="Hero__Item--4__Block">
             <h6 className="Hero__Item--4__BlockTitle">Fast & Smooth</h6>
             <p className="Hero__Item--4__BlockText">
-              Lightning-fast websites that load instantly and feel premium on
-              every device.
+              Superior performance: ultra-fast, optimized, and smooth websites
+              on any device.
             </p>
           </div>
           <br />
           <div className="Hero__Item--4__Block">
             <h6 className="Hero__Item--4__BlockTitle">Built to Convert</h6>
             <p className="Hero__Item--4__BlockText">
-              Strategic design that turns visitors into paying customers.
+              Results-focused: structures designed to guide users and generate
+              conversions or sales.
             </p>
           </div>
           <br />
           <div className="Hero__Item--4__Block">
             <h6 className="Hero__Item--4__BlockTitle">Your Digital Partner</h6>
             <p className="Hero__Item--4__BlockText">
-              Long-term growth, ongoing support, and a website that evolves with
-              your business.
+              Real support: clear technical support, direct communication, and
+              development built to scale.
             </p>
           </div>
         </article>
