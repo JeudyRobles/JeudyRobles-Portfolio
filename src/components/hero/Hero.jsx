@@ -1,27 +1,27 @@
 import "./Hero.css";
 import ButtonPrimary from "../buttonPrimary/ButtonPrimary.jsx";
 import WorldIcon from "../icons/World.jsx";
-import Tippy from '@tippyjs/react';
+import Tippy from "@tippyjs/react";
+import { useLanguage } from "../../context/LanguageContext.jsx";
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <>
       <section className="Section Hero" id="Hero">
         <article className="Hero__Item Hero__Item--1">
-          <ButtonPrimary text="Open to work" />
+          <ButtonPrimary text={t("hero.openToWork")} />
           <h1 data-aos="zoom-in">Jeudy Robles</h1>
-          <h2 data-aos="zoom-in">Frontend Developer & UI Specialist</h2>
+          <h2 data-aos="zoom-in">{t("hero.subtitle")}</h2>
           <p data-aos="zoom-in" className="Hero__item--1---text">
-            I build fast, modern websites designed to turn visitors into
-            customers. I combine advanced frontend development in React, custom
-            design in Figma, and smooth GSAP animations to create digital
-            experiences that stand out and truly perform.
+            {t("hero.description")}
           </p>
           <div className="Hero__Item--1__Resume">
             <a
               data-aos="zoom-in"
               className="Hero__Item--1__Resume__Link"
-              href="/JeudyRoblesCv.pdf"
+              href={t("hero.cvHref")}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download Resume PDF"
@@ -86,17 +86,17 @@ export default function Hero() {
                   </path>
                 </g>
               </svg>
-              View Resume
+              {t("hero.resume")}
             </a>
           </div>
         </article>
 
         <article data-aos="fade-down" className="Hero__Item Hero__Item--2">
           <h3>
-            <span>Another </span>Platforms
+            <span>{t("hero.platforms")}</span>
           </h3>
           <div className="Hero__Item--2__Icons">
-            <Tippy content="My Github!" animation="fade">
+            <Tippy content={t("hero.tooltipGithub")} animation="fade">
               <a
                 id="Github"
                 className="Icon Icon-Github"
@@ -119,7 +119,7 @@ export default function Hero() {
                 </svg>
               </a>
             </Tippy>
-            <Tippy content="My Instagram!" animation="fade">
+            <Tippy content={t("hero.tooltipInstagram")} animation="fade">
               <a
                 className="Icon Icon-Instagram"
                 href="https://www.instagram.com/jeudyrp/?next=%2F"
@@ -184,7 +184,7 @@ export default function Hero() {
                 </svg>
               </a>
             </Tippy>
-            <Tippy content="My LinkedIn!" animation="fade">
+            <Tippy content={t("hero.tooltipLinkedin")} animation="fade">
               <a
                 className="Icon Icon-Linkedin"
                 href="http://www.linkedin.com/in/jeudyrobles"
@@ -210,8 +210,8 @@ export default function Hero() {
 
         <article data-aos="zoom-in-left" className="Hero__Item Hero__Item--3">
           <div className="Hero__Item--3__Div">
-            <span>I am perpetually looking to evolve.</span>
-            <h3>My Tech Stack</h3>
+            <span>{t("hero.evolving")}</span>
+            <h3>{t("hero.techStack")}</h3>
           </div>
           <div className="Hero__Item--3__Div Hero__Item--3__Div--TechStack">
             <p>Figma</p>
@@ -224,51 +224,55 @@ export default function Hero() {
         </article>
 
         <article data-aos="flip-up" className="Hero__Item Hero__Item--4">
-          <h5 className="Hero__Item--4__Title">What I Bring to the Table</h5>
+          <h5 className="Hero__Item--4__Title">{t("hero.bringTitle")}</h5>
 
           <div className="Hero__Item--4__Block">
-            <h6 className="Hero__Item--4__BlockTitle">Custom Design</h6>
+            <h6 className="Hero__Item--4__BlockTitle">
+              {t("hero.customDesign")}
+            </h6>
             <p className="Hero__Item--4__BlockText">
-              Tailor-made design: zero generic templates. Unique interfaces 100%
-              adapted to your brand identity.
+              {t("hero.customDesignText")}
             </p>
           </div>
           <br />
           <div className="Hero__Item--4__Block">
-            <h6 className="Hero__Item--4__BlockTitle">Fast & Smooth</h6>
+            <h6 className="Hero__Item--4__BlockTitle">
+              {t("hero.fastSmooth")}
+            </h6>
             <p className="Hero__Item--4__BlockText">
-              Superior performance: ultra-fast, optimized, and smooth websites
-              on any device.
+              {t("hero.fastSmoothText")}
             </p>
           </div>
           <br />
           <div className="Hero__Item--4__Block">
-            <h6 className="Hero__Item--4__BlockTitle">Built to Convert</h6>
+            <h6 className="Hero__Item--4__BlockTitle">
+              {t("hero.builtToConvert")}
+            </h6>
             <p className="Hero__Item--4__BlockText">
-              Results-focused: structures designed to guide users and generate
-              conversions or sales.
+              {t("hero.builtToConvertText")}
             </p>
           </div>
           <br />
           <div className="Hero__Item--4__Block">
-            <h6 className="Hero__Item--4__BlockTitle">Your Digital Partner</h6>
+            <h6 className="Hero__Item--4__BlockTitle">
+              {t("hero.digitalPartner")}
+            </h6>
             <p className="Hero__Item--4__BlockText">
-              Real support: clear technical support, direct communication, and
-              development built to scale.
+              {t("hero.digitalPartnerText")}
             </p>
           </div>
         </article>
 
         <article data-aos="zoom-in" className="Hero__Item Hero__Item--5">
-          <img src="/assets/images/Tenor-unscreen.gif" alt="Jumping Cat"></img>
+          <img src="/assets/images/Tenor-unscreen.gif" alt="Jumping Cat" />
         </article>
 
         <article data-aos="fade-right" className="Hero__Item Hero__Item--6">
           <WorldIcon />
-          <p>Based in San Jose,</p>
+          <p>{t("hero.basedIn")}</p>
           <span>Costa Rica</span>
         </article>
-        <Tippy content="Contact Me!">
+        <Tippy content={t("hero.contactMe")}>
           <article data-aos="fade-up" className="Hero__Item Hero__Item--7">
             <a
               className="Icon Icon-Email"

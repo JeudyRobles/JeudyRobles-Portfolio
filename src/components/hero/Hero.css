@@ -135,6 +135,25 @@
   align-items: center;
 }
 
+@media (max-width: 72.75rem) {
+  .Hero__Item--1 h1 {
+    line-height: 1.1;
+  }
+
+  .Hero__Item--1 h2 {
+    line-height: 1.2;
+  }
+
+  .Hero__Item--2 h3 {
+    line-height: 1.1;
+  }
+
+  .Hero__Item--3__Div h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.1;
+  }
+}
+
 @media (max-width: 64rem) {
   .Hero {
     grid-template-columns: 1fr; 

@@ -1,6 +1,10 @@
 import "./Footer.css";
 import Tippy from "@tippyjs/react";
+import { useLanguage } from "../../context/LanguageContext.jsx";
+
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer
       data-aos="fade-up"
@@ -14,7 +18,7 @@ export default function Footer() {
       <section className="Footer__Info">
         <h3 className="Footer__InfoText">JEUDY ROBLES</h3>
         <ul className="Footer__Links">
-          <Tippy content="My Github!" animation="fade" >
+          <Tippy content={t("footer.tooltipGithub")} animation="fade">
             <li>
               <a
                 className="Footer__Link Icon Icon-Github"
@@ -38,7 +42,7 @@ export default function Footer() {
               </a>
             </li>
           </Tippy>
-          <Tippy content="My Instagram!" animation="fade">
+          <Tippy content={t("footer.tooltipInstagram")} animation="fade">
             <li>
               <a
                 className="Footer__Link Icon Icon-Instagram"
@@ -105,7 +109,7 @@ export default function Footer() {
               </a>
             </li>
           </Tippy>
-          <Tippy content="My LinkedIn!" animation="fade">
+          <Tippy content={t("footer.tooltipLinkedin")} animation="fade">
             <li>
               <a
                 className="Footer__Link Icon Icon-Linkedin"
@@ -132,11 +136,10 @@ export default function Footer() {
       </section>
 
       <section className="Footer__Copy">
-        <Tippy content="Do you like my website?" animation="fade">
+        <Tippy content={t("footer.tooltipLike")} animation="fade">
           <a
             className="Icon Icon-Heart"
             onClick={() => {
-              /* alert('You clicked me!'); */
               const svgElement = document.querySelector("#Icon-Heart path");
               svgElement.setAttribute("stroke", "red");
               svgElement.setAttribute("fill", "red");
@@ -156,9 +159,7 @@ export default function Footer() {
             </svg>
           </a>
         </Tippy>
-        <h6 className="Footer__CopyText">
-          This website was planned, designed and created by me 🗿{" "}
-        </h6>
+        <h6 className="Footer__CopyText">{t("footer.copyright")}</h6>
       </section>
     </footer>
   );

@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { useLanguage } from '../../context/LanguageContext.jsx';
 
 const ButtonLink = styled.a`
   text-decoration: none;
@@ -34,7 +35,7 @@ const Edge = styled.span`
 `;
 
 const Front = styled.span`
-  width: 11rem;
+  width: ${(props) => (props.$isEs ? "16.2rem" : "11rem")};
   height: 2.5rem;
   position: relative;
   display: flex;
@@ -59,6 +60,8 @@ const ButtonText = styled.span`
 `;
 
 export default function ButtonPrimary({ text }) {
+  const { lang } = useLanguage();
+
   return (
     <ButtonLink
       data-aos="zoom-in"
@@ -66,7 +69,7 @@ export default function ButtonPrimary({ text }) {
       rel="noopener noreferrer"
     >
       <Edge />
-      <Front className="front">
+      <Front $isEs={lang === "es"} className="front">
         <ButtonText>{text}</ButtonText>
       </Front>
     </ButtonLink>

@@ -41,7 +41,7 @@ export default defineConfig({
     react(),
     vitePrerender({
       staticDir: path.resolve('dist'),
-      routes: ['/'],
+      routes: ['/', '/es'],
       server: {
         host: 'localhost',
         port: 8001,
