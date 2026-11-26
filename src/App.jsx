@@ -3,6 +3,7 @@ import Nav from "./components/nav/Nav.jsx";
 import Hero from "./components/hero/Hero.jsx";
 import Projects from "./components/projects/Projects.jsx";
 import Footer from "./components/footer/Footer.jsx";
+import UpdateNotice from "./components/updateNotice/UpdateNotice.jsx";
 
 import { ReactLenis, useLenis } from "lenis/react";
 
@@ -176,6 +177,7 @@ function AppInner() {
         <Projects />
         <Footer />
       </div>
+      <UpdateNotice />
     </>
   );
 
