@@ -75,6 +75,14 @@ const translations = {
     "footer.tooltipLike": "Do you like my website?",
     "footer.copyright":
       "This website was planned, designed and created by me \u{1F5FF} ",
+
+    // Update notice
+    "notice.badge": "Coming soon",
+    "notice.title": "Something new is on the way",
+    "notice.text":
+      "I'm working on a new version of this portfolio to give you a better experience. It will be live very soon; in the meantime, feel free to explore everything here.",
+    "notice.button": "Got it",
+    "notice.close": "Close notice",
   },
 
   es: {
@@ -154,6 +162,14 @@ const translations = {
     "footer.tooltipLike": "\u00BFTe gusta mi sitio web?",
     "footer.copyright":
       "Este sitio web fue planeado, dise\u00F1ado y creado por m\u00ED \u{1F5FF} ",
+
+    // Update notice
+    "notice.badge": "Pr\u00F3ximamente",
+    "notice.title": "Algo nuevo viene en camino",
+    "notice.text":
+      "Estoy trabajando en una nueva versi\u00F3n de este portafolio para ofrecerte una mejor experiencia. Muy pronto estar\u00E1 disponible; mientras tanto, puedes explorar todo lo que hay aqu\u00ED.",
+    "notice.button": "Entendido",
+    "notice.close": "Cerrar aviso",
   },
 };
 
